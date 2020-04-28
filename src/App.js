@@ -13,7 +13,7 @@ class App extends Component { //App is a class type component
       searchField: ''
     };
   }
-
+ 
   componentDidMount(){ //when app component is mounted fetch names for monsters from this link
    fetch('https://jsonplaceholder.typicode.com/users') //fetch returns a promise object
    .then(response => response.json()) //.json's used to convert response from url to json format, which JS treats as obj
